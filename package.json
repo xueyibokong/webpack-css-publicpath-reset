@@ -1,6 +1,6 @@
 {
   "name": "webpack-css-publicpath-reset",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "简单的插件，弥补extract-text-webpack-plugin插件csspublicPath无效",
   "main": "index.js",
   "scripts": {
