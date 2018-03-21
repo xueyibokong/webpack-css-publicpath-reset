@@ -2,8 +2,11 @@
 * 此插件是为了解决extract-text-webpack-plugin插件无法替换html中publicPath的问题
 * */
 var options = {};
-function CssPbulicPathReset (opts){
-    options = opts
+function CssPbulicPathReset ({publicPath = '',excludeLinks = []} = {}){
+    options = {
+        publicPath : publicPath,
+        excludeLinks : excludeLinks
+    }
 };
 CssPbulicPathReset.prototype.apply = function(compiler) {
     // 设置回调来访问编译对象：
